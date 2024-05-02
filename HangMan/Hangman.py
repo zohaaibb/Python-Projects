@@ -7,7 +7,7 @@ print(logo)  # Print the hangman logo
 from words import word_list  # importing words from words.py
 random_word = random.choice(word_list)  # Choose a random word to guess
 
-# Print(f" {random_word}") You can run this to figure out what word is getting selected
+# print(f" {random_word}") #You can run this to figure out what word is getting selected
 
 display = []  # creating an empty list
 for letter in range(len(random_word)):
