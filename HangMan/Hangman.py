@@ -25,12 +25,13 @@ while not is_game_over:
             display[position] = guess    # Update display with the guessed letter
 
     if word not in guess:    # If the guess is not in the word
+        print(f"You guessed {word}, that's not in the word. You lose a life.")
         lives -= 1
         if lives == 0:
             is_game_over = True
             print(" You Lose!")
 
-    print(display)     # Print the updated display of guessed letters and underscores
+    print(f"{' '.join(display)}")    # Print the updated display of guessed letters and underscores
 
     # Check for win condition (all letters guessed)
     if "_" not in display:
